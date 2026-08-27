@@ -1,0 +1,86 @@
+import type { Module } from './types';
+
+export const modulo1: Module = {
+  number: 1,
+  slug: 'planejamento-financeiro',
+  title: 'Planejamento Financeiro: Princípios, Processos e Habilidades',
+  shortTitle: 'Planejamento Financeiro',
+  tagline: 'A base de tudo: como planejar dinheiro com método e ética.',
+  descricao: [
+    'Planejamento financeiro é o processo de organizar recursos hoje para alcançar objetivos amanhã. Este módulo apresenta o "chão" que sustenta qualquer decisão financeira.',
+    'Você verá o ambiente econômico e regulatório, a matemática financeira (o famoso valor do dinheiro no tempo, que reaparece em praticamente todos os outros módulos) e o perfil de risco do investidor.',
+  ],
+  duracao: '13:52:49',
+  totalAulas: 53,
+  icon: 'Target',
+  nivel: 'Fundamentos',
+  sections: [
+    {
+      id: '1.4',
+      title: 'Ambiente regulatório, político e econômico',
+      resumo: [
+        'Nenhuma decisão financeira acontece no vácuo. Inflação, juros, câmbio, política fiscal e ciclos econômicos moldam o terreno onde você investe e gasta.',
+        'Esta seção dá o vocabulário econômico essencial — de microeconomia a políticas monetárias — e alerta para crimes contra o mercado.',
+      ],
+      topics: [
+        { id: '1.4.1', title: 'Introdução ao ambiente regulatório' },
+        { id: '1.4.2', title: 'Dever fiduciário: conduta ética e profissional' },
+        { id: '1.4.3', title: 'Microeconomia' },
+        { id: '1.4.4', title: 'Elasticidade preço-demanda' },
+        { id: '1.4.5', title: 'Estruturas de mercado' },
+        { id: '1.4.6', title: 'PIB e PNB' },
+        { id: '1.4.7', title: 'Índices de inflação' },
+        { id: '1.4.8', title: 'Políticas monetárias' },
+        { id: '1.4.9', title: 'Política cambial' },
+        { id: '1.4.10', title: 'Balança de pagamentos' },
+        { id: '1.4.11', title: 'Política fiscal' },
+        { id: '1.4.12', title: 'Sentimento em relação ao governo local' },
+        { id: '1.4.13', title: 'Análise dos ciclos econômicos' },
+        { id: '1.4.14', title: 'Crimes contra o mercado de capitais' },
+        { id: '1.4.15', title: 'Manipulação de mercado' },
+        { id: '1.4.16', title: 'Práticas não equitativas' },
+      ],
+    },
+    {
+      id: '1.5',
+      title: 'Lei e conformidade',
+      resumo: [
+        'Um panorama das obrigações legais e de compliance que cercam quem lida com dinheiro de terceiros.',
+      ],
+      topics: [{ id: '1.5.1', title: 'Lei e conformidade' }],
+    },
+    {
+      id: '1.6',
+      title: 'Valor do dinheiro no tempo',
+      resumo: [
+        'O conceito mais importante das finanças: R$ 1 hoje vale mais do que R$ 1 amanhã. Daqui saem juros compostos, valor presente e futuro, TIR, VPL e amortização.',
+        'Domine esta seção e boa parte de investimentos, crédito e viabilidade de projetos passa a fazer sentido. É aqui que futuramente entram calculadoras interativas.',
+      ],
+      topics: [
+        { id: '1.6.1', title: 'Princípios de matemática financeira', ferramenta: true },
+        { id: '1.6.2', title: 'Regimes de capitalização' },
+        { id: '1.6.3', title: 'Equivalência de taxas', ferramenta: true },
+        { id: '1.6.4', title: 'Fluxo de caixa' },
+        { id: '1.6.5', title: 'Viabilidade de projetos (TIR, VPL e TMA)', ferramenta: true },
+        { id: '1.6.6', title: 'TIR modificada' },
+        { id: '1.6.7', title: 'Perpetuidade' },
+        { id: '1.6.8', title: 'Taxa real x taxa nominal', ferramenta: true },
+        { id: '1.6.9', title: 'Desconto por dentro x por fora' },
+        { id: '1.6.10', title: 'Sistemas de amortização (SAC, Price)', ferramenta: true },
+        { id: '1.6.11', title: 'Série postecipada, antecipada e com carência' },
+        { id: '1.6.12', title: 'Payback simples e descontado' },
+        { id: '1.6.13', title: 'Custo médio ponderado de capital (WACC)' },
+        { id: '1.6.14', title: 'EBITDA' },
+        { id: '1.6.15', title: 'Cupom cambial' },
+      ],
+    },
+    {
+      id: '1.8',
+      title: 'Perfil de risco',
+      resumo: [
+        'Capacidade e tolerância a risco são coisas diferentes. Entender o perfil evita carteiras que a pessoa não consegue sustentar em momentos de queda.',
+      ],
+      topics: [{ id: '1.8.1', title: 'Perfil de risco do cliente' }],
+    },
+  ],
+};

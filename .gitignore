@@ -1,0 +1,71 @@
+########################
+# DEPENDÊNCIAS
+########################
+node_modules/
+**/node_modules/
+
+########################
+# NEXT.JS
+########################
+.next/
+**/.next/
+out/
+**/out/
+
+########################
+# BUILD
+########################
+dist/
+**/dist/
+build/
+**/build/
+
+########################
+# CACHE / TEMP
+########################
+.cache/
+**/.cache/
+
+########################
+# LOGS
+########################
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+########################
+# ENV
+########################
+.env
+.env.*
+!.env.example
+!.env.exemplo
+!**/.env.example
+!**/.env.exemplo
+
+########################
+# OS / EDITOR
+########################
+.DS_Store
+.idea/
+.vscode/
+
+########################
+# VERCEL
+########################
+.vercel
+
+########################
+# TYPESCRIPT
+########################
+*.tsbuildinfo
+next-env.d.ts
+
+########################
+# PRISMA
+########################
+prisma/dev.db
+prisma/*.db
+lib/generated/

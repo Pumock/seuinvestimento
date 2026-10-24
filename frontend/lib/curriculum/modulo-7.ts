@@ -7,7 +7,7 @@ export const modulo7: Module = {
   shortTitle: 'Patrimônio e Sucessão',
   tagline: 'Transmitir patrimônio com menos conflito, custo e imposto.',
   descricao: [
-    'O que acontece com o patrimônio quando alguém falece? Este módulo trata da sucessão: regimes de casamento, ordem de herança, testamento, inventário e as ferramentas para planejar tudo isso em vida.',
+    'O que acontece com o patrimônio quando alguém falece? Este tema trata da sucessão: regimes de casamento, ordem de herança, testamento, inventário e as ferramentas para planejar tudo isso em vida.',
     'Planejar a sucessão é um ato de cuidado com quem fica — reduz disputas, acelera a partilha e diminui a carga tributária (ITCMD).',
   ],
   duracao: '07:23:54',

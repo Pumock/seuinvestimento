@@ -7,7 +7,7 @@ export const modulo2: Module = {
   shortTitle: 'Gestão Financeira',
   tagline: 'Organizar o presente: orçamento, reserva e crédito consciente.',
   descricao: [
-    'Antes de investir, é preciso arrumar a casa. Este módulo trata do dia a dia do dinheiro: para onde ele vai, quanto sobra, e como construir uma reserva que dê tranquilidade.',
+    'Antes de investir, é preciso arrumar a casa. Este tema trata do dia a dia do dinheiro: para onde ele vai, quanto sobra, e como construir uma reserva que dê tranquilidade.',
     'Também desmistifica o crédito — cartão, consignado, financiamento imobiliário, consórcio — mostrando quando ele é ferramenta e quando vira armadilha.',
   ],
   duracao: '03:46:20',

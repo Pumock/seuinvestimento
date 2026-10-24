@@ -12,10 +12,10 @@ export default function NotFound() {
         O conteúdo pode ter mudado de lugar ou ainda não existe.
       </p>
       <Link
-        href="/modulos"
+        href="/temas"
         className="mt-6 rounded-full bg-ink px-5 py-3 text-sm font-medium text-[var(--bg)] hover:opacity-90"
       >
-        Ver os módulos
+        Ver os temas
       </Link>
     </Container>
   );

@@ -7,7 +7,7 @@ export const modulo5: Module = {
   shortTitle: 'Seguros e Risco',
   tagline: 'Proteger o que você construiu antes de multiplicar.',
   descricao: [
-    'Gestão de risco é decidir quais riscos você assume, quais evita e quais transfere para uma seguradora. Este módulo cobre os princípios de seguros e os principais produtos — de vida a automóvel, saúde e responsabilidade civil.',
+    'Gestão de risco é decidir quais riscos você assume, quais evita e quais transfere para uma seguradora. Este tema cobre os princípios de seguros e os principais produtos — de vida a automóvel, saúde e responsabilidade civil.',
     'Proteção vem antes de rentabilidade: de nada adianta uma boa carteira se um único evento pode destruir o patrimônio da família.',
   ],
   duracao: '06:25:43',
@@ -87,7 +87,7 @@ export const modulo5: Module = {
       id: '5.6',
       title: 'Tributação em seguros',
       resumo: [
-        'Como o imposto de renda incide (ou não) sobre prêmios e indenizações — um ponto que conecta este módulo ao de tributação.',
+        'Como o imposto de renda incide (ou não) sobre prêmios e indenizações — um ponto que conecta este tema ao de tributação.',
       ],
       topics: [{ id: '5.6.1', title: 'Aspectos tributários dos seguros' }],
     },

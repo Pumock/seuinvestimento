@@ -7,7 +7,7 @@ export const modulo4: Module = {
   shortTitle: 'Aposentadoria',
   tagline: 'Construir hoje a renda que você vai viver amanhã.',
   descricao: [
-    'Aposentadoria não é uma idade — é um patrimônio que gera renda. Este módulo mostra como funciona a Previdência Social (INSS), o que esperar dela e como complementar com previdência privada.',
+    'Aposentadoria não é uma idade — é um patrimônio que gera renda. Este tema mostra como funciona a Previdência Social (INSS), o que esperar dela e como complementar com previdência privada.',
     'Você vai entender PGBL x VGBL, os regimes de tributação, portabilidade e como calcular quanto precisa acumular para manter seu padrão de vida.',
   ],
   duracao: '06:01:21',

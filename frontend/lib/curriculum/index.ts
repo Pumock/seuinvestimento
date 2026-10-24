@@ -1,6 +1,5 @@
 import type { Module, Section } from './types';
 import { slugify } from './slug';
-import { modulo0 } from './modulo-0';
 import { modulo1 } from './modulo-1';
 import { modulo2 } from './modulo-2';
 import { modulo3 } from './modulo-3';
@@ -13,9 +12,8 @@ import { modulo8 } from './modulo-8';
 export type { Module, Section, Topic, Nivel } from './types';
 export { slugify } from './slug';
 
-/** Todos os módulos, na ordem do currículo. */
+/** Todos os temas, na ordem do currículo. */
 export const modules: Module[] = [
-  modulo0,
   modulo1,
   modulo2,
   modulo3,
@@ -26,7 +24,7 @@ export const modules: Module[] = [
   modulo8,
 ];
 
-/** Módulos "de conteúdo" (exclui o onboarding da grade principal). */
+/** Temas "de conteúdo" (exclui o onboarding da grade principal). */
 export const contentModules: Module[] = modules.filter(
   (m) => m.number >= 1 && m.number <= 8,
 );
@@ -35,7 +33,7 @@ export function getModule(slug: string): Module | undefined {
   return modules.find((m) => m.slug === slug);
 }
 
-/** Slug estável para uma seção (derivado do título, único dentro do módulo). */
+/** Slug estável para uma seção (derivado do título, único dentro do tema). */
 export function sectionSlug(section: Section): string {
   return slugify(section.title);
 }
@@ -62,7 +60,7 @@ export const stats = {
   ),
 };
 
-/** Índice para navegação anterior/próximo entre módulos de conteúdo. */
+/** Índice para navegação anterior/próximo entre temas de conteúdo. */
 export function moduleNeighbors(slug: string): {
   prev?: Module;
   next?: Module;

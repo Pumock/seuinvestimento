@@ -7,7 +7,7 @@ export const modulo6: Module = {
   shortTitle: 'Tributação',
   tagline: 'Pagar o imposto certo — nem mais, nem menos — de forma legal.',
   descricao: [
-    'Impostos corroem retorno silenciosamente. Este módulo ensina a lógica do sistema tributário brasileiro e como ele incide sobre pessoas físicas, investimentos, imóveis e patrimônio.',
+    'Impostos corroem retorno silenciosamente. Este tema ensina a lógica do sistema tributário brasileiro e como ele incide sobre pessoas físicas, investimentos, imóveis e patrimônio.',
     'A meta não é sonegar, e sim organizar. Entender a tributação permite escolher produtos, prazos e estruturas que reduzem a mordida do Leão dentro da lei.',
   ],
   duracao: '06:52:01',
@@ -295,10 +295,6 @@ export const modulo6: Module = {
             {
               type: 'p',
               text: 'O contribuinte escolhe entre o desconto simplificado e as deduções legais, observados os limites anuais. Para o ano-calendário de 2026 (exercício 2027), a tabela anual chega a 27,5%, com dedução por dependente de R$ 2.275,08, limite de instrução de R$ 3.561,50 e limite do desconto simplificado de R$ 17.640,00.',
-            },
-            {
-              type: 'note',
-              text: 'Aqui vai morar, no futuro, um simulador que ajuda a decidir entre simplificada e completa e a entender como declarar cada rendimento.',
             },
           ],
         },
@@ -753,7 +749,7 @@ export const modulo6: Module = {
           content: [
             {
               type: 'p',
-              text: 'A tributação brasileira combina princípios constitucionais, as normas gerais do CTN, legislação federal, estadual e municipal e um conjunto de obrigações acessórias. Alguns fios condutores atravessam todo o módulo:',
+              text: 'A tributação brasileira combina princípios constitucionais, as normas gerais do CTN, legislação federal, estadual e municipal e um conjunto de obrigações acessórias. Alguns fios condutores atravessam todo o tema:',
             },
             {
               type: 'list',

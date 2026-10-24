@@ -8,68 +8,62 @@ import { NivelBadge } from '@/components/ui/badge';
 import { getModule, modules, sectionSlug, moduleNeighbors } from '@/lib/curriculum';
 
 interface Props {
-  params: { modulo: string };
+  params: { tema: string };
 }
 
 export function generateStaticParams() {
-  return modules.map((m) => ({ modulo: m.slug }));
+  return modules.map((m) => ({ tema: m.slug }));
 }
 
 export function generateMetadata({ params }: Props): Metadata {
-  const module = getModule(params.modulo);
-  if (!module) return {};
-  return { title: module.shortTitle, description: module.tagline };
+  const tema = getModule(params.tema);
+  if (!tema) return {};
+  return { title: tema.shortTitle, description: tema.tagline };
 }
 
-export default function ModuloPage({ params }: Props) {
-  const module = getModule(params.modulo);
-  if (!module) notFound();
+export default function TemaPage({ params }: Props) {
+  const tema = getModule(params.tema);
+  if (!tema) notFound();
 
-  const { prev, next } = moduleNeighbors(module.slug);
+  const { prev, next } = moduleNeighbors(tema.slug);
 
   return (
     <div className="max-w-reading">
       <Breadcrumbs
-        items={[{ label: 'Início', href: '/' }, { label: module.shortTitle }]}
+        items={[{ label: 'Início', href: '/' }, { label: tema.shortTitle }]}
       />
 
       {/* Cabeçalho */}
       <div className="mt-5 flex items-center gap-3">
         <span className="grid h-10 w-10 place-items-center rounded-lg bg-surface-2 text-accent-ink">
-          <ModuleIcon name={module.icon} />
+          <ModuleIcon name={tema.icon} />
         </span>
-        <span className="text-sm font-medium text-muted">
-          Módulo {String(module.number).padStart(2, '0')}
-        </span>
-        <NivelBadge nivel={module.nivel} />
+        <NivelBadge nivel={tema.nivel} />
       </div>
 
       <h1 className="mt-4 font-serif text-3xl leading-tight text-ink md:text-4xl">
-        {module.title}
+        {tema.title}
       </h1>
 
       <div className="prose-editorial mt-5">
-        {module.descricao.map((p, i) => (
+        {tema.descricao.map((p, i) => (
           <p key={i}>{p}</p>
         ))}
       </div>
 
-      {/* Seções */}
-      {module.sections.length > 0 && (
+      {/* Artigos */}
+      {tema.sections.length > 0 && (
         <>
           <h2 className="mt-10 font-serif text-xl text-ink">
-            Seções deste módulo
+            Artigos deste tema
           </h2>
           <ol className="mt-4 space-y-2">
-            {module.sections.map((section, i) => (
+            {tema.sections.map((section) => (
               <li key={section.id}>
                 <Link
-                  href={`/modulos/${module.slug}/${sectionSlug(section)}`}
+                  href={`/temas/${tema.slug}/${sectionSlug(section)}`}
                   className="group flex items-start gap-4 rounded-lg border border-border p-4 transition-colors hover:border-ring hover:bg-surface-2"
                 >
-                  <span className="mt-0.5 font-serif text-base text-faint">
-                    {String(i + 1).padStart(2, '0')}
-                  </span>
                   <div className="min-w-0 flex-1">
                     <h3 className="font-medium text-ink group-hover:text-accent">
                       {section.title}
@@ -86,11 +80,11 @@ export default function ModuloPage({ params }: Props) {
         </>
       )}
 
-      {/* Navegação entre módulos */}
+      {/* Navegação entre temas */}
       <nav className="mt-12 flex items-stretch justify-between gap-4 border-t border-border pt-6">
         {prev ? (
           <Link
-            href={`/modulos/${prev.slug}`}
+            href={`/temas/${prev.slug}`}
             className="group flex flex-col items-start gap-1"
           >
             <span className="flex items-center gap-1.5 text-xs text-muted">
@@ -105,7 +99,7 @@ export default function ModuloPage({ params }: Props) {
         )}
         {next ? (
           <Link
-            href={`/modulos/${next.slug}`}
+            href={`/temas/${next.slug}`}
             className="group flex flex-col items-end gap-1"
           >
             <span className="flex items-center gap-1.5 text-xs text-muted">

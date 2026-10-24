@@ -37,7 +37,7 @@ export interface Module {
   shortTitle: string;
   /** Frase curta de vitrine. */
   tagline: string;
-  /** Conteúdo básico do módulo (parágrafos). */
+  /** Conteúdo básico do tema (parágrafos). */
   descricao: string[];
   duracao: string;
   totalAulas: number;

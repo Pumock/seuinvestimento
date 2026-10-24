@@ -7,26 +7,26 @@ import { ChevronRight } from 'lucide-react';
 import { modules, sectionSlug } from '@/lib/curriculum';
 import { cn } from '@/lib/utils';
 
-/** Extrai o slug do módulo ativo a partir do pathname. */
-function activeModuleSlug(pathname: string): string | null {
-  const m = pathname.match(/^\/modulos\/([^/]+)/);
+/** Extrai o slug do tema ativo a partir do pathname. */
+function activeTemaSlug(pathname: string): string | null {
+  const m = pathname.match(/^\/temas\/([^/]+)/);
   return m ? m[1] : null;
 }
 
 export function Sidebar({ onNavigate }: { onNavigate?: () => void }) {
   const pathname = usePathname();
-  const activeMod = activeModuleSlug(pathname);
+  const activeTema = activeTemaSlug(pathname);
 
   const [open, setOpen] = useState<Record<string, boolean>>(() =>
-    activeMod ? { [activeMod]: true } : {},
+    activeTema ? { [activeTema]: true } : {},
   );
 
-  // Mantém o módulo ativo sempre expandido ao navegar.
+  // Mantém o tema ativo sempre expandido ao navegar.
   useEffect(() => {
-    if (activeMod) {
-      setOpen((prev) => (prev[activeMod] ? prev : { ...prev, [activeMod]: true }));
+    if (activeTema) {
+      setOpen((prev) => (prev[activeTema] ? prev : { ...prev, [activeTema]: true }));
     }
-  }, [activeMod]);
+  }, [activeTema]);
 
   const toggle = (slug: string) =>
     setOpen((prev) => ({ ...prev, [slug]: !prev[slug] }));
@@ -46,14 +46,14 @@ export function Sidebar({ onNavigate }: { onNavigate?: () => void }) {
         Início
       </Link>
 
-      {modules.map((module) => {
-        const isOpen = !!open[module.slug];
-        const modActive = pathname === `/modulos/${module.slug}`;
-        const groupActive = activeMod === module.slug;
+      {modules.map((tema) => {
+        const isOpen = !!open[tema.slug];
+        const temaActive = pathname === `/temas/${tema.slug}`;
+        const groupActive = activeTema === tema.slug;
 
         return (
-          <div key={module.slug}>
-            {/* Cabeçalho do módulo (grupo colapsável) */}
+          <div key={tema.slug}>
+            {/* Cabeçalho do tema (grupo colapsável) */}
             <div
               className={cn(
                 'group flex items-center rounded-md pr-1 transition-colors',
@@ -61,24 +61,19 @@ export function Sidebar({ onNavigate }: { onNavigate?: () => void }) {
               )}
             >
               <Link
-                href={`/modulos/${module.slug}`}
+                href={`/temas/${tema.slug}`}
                 onClick={onNavigate}
                 className={cn(
                   'flex-1 rounded-md px-3 py-2 font-semibold transition-colors',
-                  modActive
-                    ? 'text-accent'
-                    : 'hover:text-accent-ink',
+                  temaActive ? 'text-accent' : 'hover:text-accent-ink',
                 )}
               >
-                <span className="mr-1.5 text-xs font-normal text-faint">
-                  {String(module.number).padStart(2, '0')}
-                </span>
-                {module.shortTitle}
+                {tema.shortTitle}
               </Link>
               <button
                 type="button"
                 aria-label={isOpen ? 'Recolher' : 'Expandir'}
-                onClick={() => toggle(module.slug)}
+                onClick={() => toggle(tema.slug)}
                 className="grid h-7 w-7 place-items-center rounded-md text-faint transition-colors hover:bg-surface-2 hover:text-ink"
               >
                 <ChevronRight
@@ -90,14 +85,14 @@ export function Sidebar({ onNavigate }: { onNavigate?: () => void }) {
               </button>
             </div>
 
-            {/* Seções */}
+            {/* Artigos */}
             {isOpen && (
               <ul className="mb-1 ml-4 border-l border-border pl-2">
-                {module.sections.map((section) => {
-                  const href = `/modulos/${module.slug}/${sectionSlug(section)}`;
+                {tema.sections.map((artigo) => {
+                  const href = `/temas/${tema.slug}/${sectionSlug(artigo)}`;
                   const active = pathname === href;
                   return (
-                    <li key={section.id}>
+                    <li key={artigo.id}>
                       <Link
                         href={href}
                         onClick={onNavigate}
@@ -108,7 +103,7 @@ export function Sidebar({ onNavigate }: { onNavigate?: () => void }) {
                             : 'text-muted hover:bg-surface-2 hover:text-ink',
                         )}
                       >
-                        {section.title}
+                        {artigo.title}
                       </Link>
                     </li>
                   );

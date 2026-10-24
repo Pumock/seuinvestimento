@@ -7,7 +7,7 @@ export const modulo8: Module = {
   shortTitle: 'Psicologia Financeira',
   tagline: 'O maior obstáculo entre você e seus objetivos costuma ser você.',
   descricao: [
-    'De nada adianta saber a teoria se a emoção sabota a execução. Este módulo apresenta as finanças comportamentais: os atalhos mentais (heurísticas) e os vieses que nos levam a decisões ruins com o dinheiro.',
+    'De nada adianta saber a teoria se a emoção sabota a execução. Este tema apresenta as finanças comportamentais: os atalhos mentais (heurísticas) e os vieses que nos levam a decisões ruins com o dinheiro.',
     'Você vai reconhecer seus próprios padrões — medo, excesso de confiança, aversão à perda — e aprender abordagens para decidir com mais clareza.',
   ],
   duracao: '01:44:24',

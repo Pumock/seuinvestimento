@@ -26,7 +26,7 @@ export default function SobrePage() {
             saber para cuidar bem do próprio dinheiro — do básico ao avançado.
           </p>
           <p>
-            O conteúdo está organizado em módulos que cobrem todo o ciclo do
+            O conteúdo está organizado por temas que cobrem todo o ciclo do
             planejamento financeiro: <strong>organizar</strong> o presente,{' '}
             <strong>investir</strong> para o futuro, <strong>proteger</strong> o
             patrimônio e <strong>transmiti-lo</strong> com eficiência. A estrutura
@@ -34,11 +34,9 @@ export default function SobrePage() {
             escrita para qualquer pessoa — não apenas para especialistas.
           </p>
           <p>
-            Estamos começando pelo esqueleto: a estrutura completa e o conteúdo
-            essencial de cada tema. A partir daí, cada seção vai ganhar
-            profundidade e, principalmente, <strong>ferramentas interativas</strong>{' '}
-            — simuladores de imposto de renda, calculadoras de investimentos,
-            comparadores e muito mais.
+            A estrutura cobre todos os temas com o conteúdo essencial de cada um,
+            e cada artigo ganha profundidade ao longo do tempo — sempre com foco em
+            explicar de forma clara e aplicável ao dia a dia.
           </p>
         </div>
 

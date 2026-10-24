@@ -13,21 +13,20 @@ export default function HomePage() {
 
       <div className="prose-editorial mt-5">
         <p>
-          Um guia completo de educação financeira: planejamento, investimentos,
-          aposentadoria, seguros, tributação, sucessão e comportamento — organizado
-          em módulos que você navega pelo menu à esquerda.
+          Uma coleção de artigos sobre educação financeira: planejamento,
+          investimentos, aposentadoria, seguros, tributação, sucessão e
+          comportamento — organizada por tema no menu à esquerda.
         </p>
         <p>
-          Use o menu para explorar os temas. Cada seção traz o conteúdo essencial
-          agora e vai ganhar <strong>ferramentas interativas</strong> (simuladores e
-          calculadoras) ao longo do tempo.
+          Use o menu para explorar os temas. Cada artigo reúne o conteúdo essencial
+          para você entender e decidir com clareza.
         </p>
       </div>
 
       <dl className="mt-8 flex flex-wrap gap-x-10 gap-y-4 border-y border-border py-5">
         {[
-          { n: stats.modulos, l: 'módulos' },
-          { n: stats.secoes, l: 'seções' },
+          { n: stats.modulos, l: 'temas' },
+          { n: stats.secoes, l: 'artigos' },
           { n: stats.topicos, l: 'tópicos' },
         ].map((s) => (
           <div key={s.l}>
@@ -37,12 +36,12 @@ export default function HomePage() {
         ))}
       </dl>
 
-      <h2 className="mt-10 font-serif text-xl text-ink">Comece por um módulo</h2>
+      <h2 className="mt-10 font-serif text-xl text-ink">Comece por um tema</h2>
       <ul className="mt-4 grid gap-2 sm:grid-cols-2">
         {contentModules.map((m) => (
           <li key={m.slug}>
             <Link
-              href={`/modulos/${m.slug}`}
+              href={`/temas/${m.slug}`}
               className="group flex items-center gap-3 rounded-lg border border-border p-3 transition-colors hover:border-ring hover:bg-surface-2"
             >
               <span className="grid h-9 w-9 shrink-0 place-items-center rounded-md bg-surface-2 text-accent-ink">

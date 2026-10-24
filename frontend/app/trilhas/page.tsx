@@ -35,7 +35,7 @@ export default function TrilhasPage() {
         </h1>
         <p className="mt-4 text-lg leading-relaxed text-muted">
           Não sabe por onde começar? Siga por nível. Cada trilha agrupa os
-          módulos numa progressão natural — do primeiro passo ao domínio.
+          temas numa progressão natural — do primeiro passo ao domínio.
         </p>
       </header>
 
@@ -56,7 +56,7 @@ export default function TrilhasPage() {
                 {mods.map((m) => (
                   <li key={m.slug}>
                     <Link
-                      href={`/modulos/${m.slug}`}
+                      href={`/temas/${m.slug}`}
                       className="group flex items-center gap-4 rounded-xl border border-border bg-surface p-4 transition-colors hover:border-ring"
                     >
                       <span className="grid h-10 w-10 shrink-0 place-items-center rounded-lg bg-accent-soft text-accent-ink">

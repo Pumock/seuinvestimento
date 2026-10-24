@@ -8,7 +8,7 @@ export const modulo3: Module = {
   tagline: 'Do Tesouro Direto a derivativos: como fazer o dinheiro trabalhar.',
   descricao: [
     'O coração do site. Aqui você conhece os instrumentos (renda fixa, renda variável, fundos, imóveis, exterior, derivativos) e — mais importante — como combiná-los em uma carteira coerente com seus objetivos e seu risco.',
-    'A segunda metade do módulo trata da teoria que sustenta boas carteiras: retorno, risco, diversificação, fronteira eficiente, CAPM e as métricas que medem se um investimento entregou o que prometeu.',
+    'A segunda metade deste tema trata da teoria que sustenta boas carteiras: retorno, risco, diversificação, fronteira eficiente, CAPM e as métricas que medem se um investimento entregou o que prometeu.',
   ],
   duracao: '16:59:51',
   totalAulas: 75,
@@ -38,7 +38,7 @@ export const modulo3: Module = {
       title: 'Renda Fixa',
       resumo: [
         'Emprestar dinheiro em troca de juros. Aqui estão os títulos públicos (Tesouro Direto), os bancários (CDB, LCI, LCA) e os privados (debêntures, CRI, CRA), além do Fundo Garantidor de Crédito.',
-        'É onde a maioria começa a investir — e onde a matemática financeira do módulo 1 se torna concreta.',
+        'É onde a maioria começa a investir — e onde a matemática financeira do tema de Planejamento Financeiro se torna concreta.',
       ],
       topics: [
         { id: '3.3.1', title: 'Instrumentos de renda fixa' },
@@ -51,6 +51,11 @@ export const modulo3: Module = {
         { id: '3.3.8', title: 'Fundo Garantidor de Crédito (FGC)' },
         { id: '3.3.9', title: 'Debêntures' },
         { id: '3.3.10', title: 'CRI e CRA' },
+        { id: '3.3.11', title: 'Certificado de Depósito Interfinanceiro (CDI)' },
+        { id: '3.3.12', title: 'Letra Hipotecária (LH)' },
+        { id: '3.3.13', title: 'NTN-C (Tesouro IGP-M)' },
+        { id: '3.3.14', title: 'Tesouro Renda+ e Educa+' },
+        { id: '3.3.15', title: 'Securitização de recebíveis' },
       ],
     },
     {
@@ -69,6 +74,9 @@ export const modulo3: Module = {
         { id: '3.4.7', title: 'Estratégias de investimento em ações' },
         { id: '3.4.8', title: 'Análise técnica e fundamentalista' },
         { id: '3.4.9', title: 'Oferta pública de valores mobiliários' },
+        { id: '3.4.10', title: 'Eventos societários (fusão, incorporação, cisão e OPA)' },
+        { id: '3.4.11', title: 'Governança corporativa (Novo Mercado e níveis)' },
+        { id: '3.4.12', title: 'Empréstimo de ativos (aluguel de ações)' },
       ],
     },
     {
@@ -96,6 +104,9 @@ export const modulo3: Module = {
         { id: '3.5.16', title: 'FIP — Participações' },
         { id: '3.5.17', title: 'ETF — Fundo de Índice' },
         { id: '3.5.18', title: 'Custos do cotista' },
+        { id: '3.5.19', title: 'Investimento por conta e ordem' },
+        { id: '3.5.20', title: 'Responsabilidade limitada dos cotistas (Resolução 175)' },
+        { id: '3.5.21', title: 'Clubes de investimento' },
       ],
     },
     {
@@ -133,6 +144,10 @@ export const modulo3: Module = {
         { id: '3.8.4', title: 'Swap: juros, moeda, índice de preços' },
         { id: '3.8.5', title: 'Opções: conceitos' },
         { id: '3.8.6', title: 'Opções com barreiras' },
+        { id: '3.8.7', title: 'Estratégias com opções e lançamento coberto' },
+        { id: '3.8.8', title: 'Fatores que influenciam o preço das opções' },
+        { id: '3.8.9', title: 'Gráficos de payoff' },
+        { id: '3.8.10', title: 'Derivativos agropecuários (commodities)' },
       ],
     },
     {
@@ -185,6 +200,19 @@ export const modulo3: Module = {
       topics: [
         { id: '3.12.1', title: 'Alocação estratégica, tática, dinâmica e estática' },
         { id: '3.12.2', title: 'Rebalanceamento' },
+      ],
+    },
+    {
+      id: '3.13',
+      title: 'Funcionamento do mercado',
+      resumo: [
+        'A mecânica por trás das negociações: como o dinheiro e os ativos circulam, quem garante a liquidação e quais travas protegem o mercado de oscilações bruscas.',
+      ],
+      topics: [
+        { id: '3.13.1', title: 'Mercado primário e secundário' },
+        { id: '3.13.2', title: 'Câmara de compensação (clearing) e liquidação' },
+        { id: '3.13.3', title: 'Limite de oscilação e túneis de negociação' },
+        { id: '3.13.4', title: 'Operações de câmbio (mercado à vista e turismo)' },
       ],
     },
   ],
